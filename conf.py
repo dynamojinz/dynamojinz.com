@@ -2,7 +2,7 @@
 # This is your configuration file.  Please write valid python!
 # See http://posativ.org/acrylamid/conf.py.html
 
-SITENAME = 'DynamoJinz的博客'
+SITENAME = "DynamoJinz's Blog"
 WWW_ROOT = 'http://dynamojinz.com/'
 
 AUTHOR = 'dynamojinz'
@@ -50,3 +50,15 @@ VIEWS = {
 THEME = 'theme'
 ENGINE = 'acrylamid.templates.jinja2.Environment'
 DATE_FORMAT = '%Y-%m-%d %H:%M:%S'
+
+CONTENT_EXTENSION = '.md'
+# Tuples are (name, link)
+BLOGROLL = [
+    ('Acrylamid', 'http://posativ.org/acrylamid/'),
+]
+
+DEPLOYMENT = {
+    "ls": "ls $OUTPUT_DIR",
+    "echo": "echo $OUTPUT_DIR",
+    "default": "rsync -av --delete $OUTPUT_DIR ec2-user@dynamojinz.com:/var/www/html/",
+}

@@ -33,10 +33,28 @@
   </div>
 
   <!------------------ Content ---------------------->
-  <div class="container">
-      <div class="content">
-      {%- block content -%}
-      {%- endblock -%}
+  <div id="content" class="container">
+      <div class="row">
+          <div class="span10">
+          {%- block content -%}
+          {%- endblock -%}
+          </div>
+          
+          <div class="span2">
+            <!-- insert your sidebar items here -->
+            <h4>Tags</h4>
+            <ul class="nav nav-list">
+            {% for tag in env.tag_cloud %} <!-- if tag.step < 2 -->
+              <li class="{{ tag.step }}"><a href="/tag/{{ tag.name | safeslug }}/">{{ tag.name }}</a></li>
+            {% endfor %}
+            </ul>
+            <h4>Links</h4>
+            <ul class="nav nav-list">
+            {% for name, href in conf.blogroll %}
+              <li><a href="{{ href }}">{{ name }}</a></li>
+            {% endfor %}
+            </ul>
+          </div>
       </div>
   </div>
 
