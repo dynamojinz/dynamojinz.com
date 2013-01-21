@@ -5,8 +5,9 @@ body {
     margin-bottom: 50px;
 }
 article {
-    /*margin-top: 64px;*/
-    /*margin-bottom: 64px;*/
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
 }
 article header {
     margin-bottom: 10px;
