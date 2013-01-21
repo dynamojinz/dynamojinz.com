@@ -4,6 +4,7 @@
   {% block head -%}
   <meta charset="utf-8" />
   <title>{% block title %}{% endblock %}</title>
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
   <link media="all" href="{{ env.path + '/style.css' }}" rel="stylesheet" />
   <link href="/favicon.ico" rel="shortcut icon" />
     {% if 'sitemap' in env.views -%}
@@ -18,26 +19,35 @@
   {%- endblock %}
 </head>
 <body>
-  <header>
-    <h1><a href="{{ env.path + '/' }}" class="blogtitle">{{ conf.sitename }}</a></h1>
-    <nav>
-      <ul>
-        <li><a href="{{ env.path + '/' }}">blog</a></li>
-        <li><a href="{{ env.path + '/atom/' }}">atom</a></li>
-        <li><a href="{{ env.path + '/rss/' }}">rss</a></li>
-        <li><a href="{{ env.path + '/articles/' }}">articles</a></li>
-      </ul>
-    </nav>
-  </header>
-  {%- block content -%}
-  {%- endblock -%}
-  <footer>
+  <!-------------------- Header ----------------------->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <a href="{{ env.path + '/' }}" class="brand">{{ conf.sitename }}</a>
+        <ul class="nav pull-right">
+            <li><a href="{{ env.path + '/' }}">Blog</a></li>
+            <li><a href="{{ env.path + '/atom/' }}">Atom</a></li>
+            <li><a href="{{ env.path + '/rss/' }}">Rss</a></li>
+            <li><a href="{{ env.path + '/articles/' }}">Articles</a></li>
+        </ul>
+    </div>
+  </div>
+
+  <!------------------ Content ---------------------->
+  <div class="container">
+      <div class="content">
+      {%- block content -%}
+      {%- endblock -%}
+      </div>
+  </div>
+
+  <!------------------ Footer ----------------------->
+  <div class="footer">
     {% block footer %}
-    <p>written by <a href="mailto:{{ conf.email }}">{{ conf.author }}</a></p>
-    <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/de/" rel="copyright">
-        <img src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" alt="by-nc-sa" />
-    </a>
+    <p>Written by <a href="mailto:{{ conf.email }}">{{ conf.author }}</a> under 
+    <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" rel="copyright">
+        <img src="http://i.creativecommons.org/l/by-nc-sa/3.0/cn/80x15.png" alt="by-nc-sa" />
+    </a></p>
     {% endblock %}
-  </footer>
+  </div>
 </body>
 </html>

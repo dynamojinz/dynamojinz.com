@@ -49,4 +49,4 @@ VIEWS = {
 
 THEME = 'theme'
 ENGINE = 'acrylamid.templates.jinja2.Environment'
-DATE_FORMAT = '%d.%m.%Y, %H:%M'
+DATE_FORMAT = '%Y-%m-%d %H:%M:%S'
