@@ -52,6 +52,7 @@ ENGINE = 'acrylamid.templates.jinja2.Environment'
 DATE_FORMAT = '%Y-%m-%d %H:%M:%S'
 
 CONTENT_EXTENSION = '.md'
+DISQUS_SHORTNAME = 'dynamojinz'
 # Tuples are (name, link)
 BLOGROLL = [
     ('Acrylamid', 'http://posativ.org/acrylamid/'),
@@ -60,5 +61,5 @@ BLOGROLL = [
 DEPLOYMENT = {
     "ls": "ls $OUTPUT_DIR",
     "echo": "echo $OUTPUT_DIR",
-    "default": "rsync -av --delete $OUTPUT_DIR ec2-user@dynamojinz.com:/var/www/html/",
+    "default": "rsync -avz --delete $OUTPUT_DIR ec2-user@dynamojinz.com:/var/www/html/",
 }

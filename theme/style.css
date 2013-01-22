@@ -7,7 +7,6 @@ body {
 article {
     padding-bottom: 30px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #cccccc;
 }
 article header {
     margin-bottom: 10px;
@@ -21,6 +20,10 @@ article header h2 a:active { color: #000000; }
 article a {
     text-decoration: none;
     color: #cc0000;
+}
+article footer {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
 }
 /*article a:hover {*/
     /*color: #ff190d;*/
