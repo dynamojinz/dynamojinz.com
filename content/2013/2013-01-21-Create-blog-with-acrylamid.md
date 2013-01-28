@@ -1,7 +1,7 @@
 ---
 title: 使用Acrylamid创建静态博客
 date: 2013-01-21 14:34:25
-tags: configs
+tags: [configs, python]
 ---
 在[greatghoul](http://github.com/greatghoul)的推荐下，用[Acrylamid](http://github.com/posativ/acrylamid)
 作为博客引擎，建立了这个静态博客程序。
