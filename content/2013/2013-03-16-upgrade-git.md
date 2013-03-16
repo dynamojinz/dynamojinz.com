@@ -18,7 +18,7 @@ slug: upgrade-git
 	正在读取状态信息... 完成       
 	git 已经是最新的版本了。
 
-明显我的ubuntu源里没有更新的Git版本，于是Google之，在咖啡兔(http://www.kafeitu.me/)
+明显我的ubuntu源里没有更新的Git版本，于是Google之，在[咖啡兔](http://www.kafeitu.me/)
 的博客上找到了解决方案：
 
 	sudo apt-add-repository ppa:git-core/ppa
