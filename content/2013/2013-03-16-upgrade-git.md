@@ -1,5 +1,5 @@
 ---
-title: 2013-03-16-upgrade-git
+title: 在ubuntu上升级Git
 date: 2013-03-16 22:12:02
 tags: [configs, ubuntu, git]
 slug: upgrade-git
