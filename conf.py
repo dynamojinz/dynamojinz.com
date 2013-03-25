@@ -61,5 +61,5 @@ BLOGROLL = [
 DEPLOYMENT = {
     "ls": "ls $OUTPUT_DIR",
     "echo": "echo $OUTPUT_DIR",
-    "default": "rsync -avz --delete $OUTPUT_DIR ec2-user@dynamojinz.com:/var/www/html/",
+    "default": "rsync -avz --delete $OUTPUT_DIR ec2-user@dynamojinz.com:/var/www/dynamojinz.com/",
 }
