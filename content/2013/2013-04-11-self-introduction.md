@@ -1,5 +1,5 @@
 ---
-title: 2013-04-11-Self-introduction
+title: Self Introduction
 date: 2013-04-11 23:16:26
 tags: [resume, life]
 slug: self-introduction
@@ -20,6 +20,6 @@ mysql as well. After 5 years work, I became an experienced engineer,
 good at software developing and problem solving.
 
 Now I am seeking a chance to improve my self, and take more responsiblities.
-And I am really appreciate you to give me the chance to take this interview.
-Thanks very much!
+And I am really appreciate you to give me this opportunity, Thanks very much!
+That's All.
 
